@@ -1,13 +1,10 @@
 import React from 'react';
 
-import Header from '../../components/header/header.component';
-import MainContent from '../../components/main-content/main-content.components';
+import LowerNav from '../../components/lower-nav/lower-nav.components';
 
 //import bg from '/Users/kevingoodenough/GIT/react-website/public/img/splash.png';
 
 import './homepage.styles.scss';
-
-var bg = '/Users/kevingoodenough/GIT/react-website/public/img/splash.png'; 
 
 const HomePage = () => (
     <div className='homepage'>
@@ -17,8 +14,15 @@ const HomePage = () => (
         >
             <p> </p>
         </div>
-        <div className='content-container'> 
-            <MainContent />
+        <div className='nav-container'> 
+            <LowerNav fill="white">
+                <div className='name'>
+                    <p>Kevin Goodenough</p>
+                </div>
+                <div className='title'>
+                    <p>Software Engineer</p>
+                </div>
+            </LowerNav>
         </div>
     </div>
 );
